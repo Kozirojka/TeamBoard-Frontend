@@ -1,4 +1,11 @@
-import './App.css'
+
+import Homepage from './components/Home/Homepage'
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+
+const queryClient = new QueryClient();
+
+
+
 function App() {
 
   // const handleLoginWithGoogle = () => {
@@ -14,11 +21,16 @@ function App() {
   // )
 
   return(
-    <div className="App">x
+
+    <QueryClientProvider client={queryClient}>
+    <div className="App">
       <header className="App-header">
-        <h1>React App</h1>
+        <Homepage />
+
       </header>
     </div>
+    </QueryClientProvider>
+    
   )
 
 }
