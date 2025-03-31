@@ -6,7 +6,6 @@ const CreateOption = () => {
       <div className="create-option">
         <div></div>
 
-        <p>Bland board</p>
       </div>
     </div>
   );
