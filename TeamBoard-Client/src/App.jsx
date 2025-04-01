@@ -7,18 +7,6 @@ import { SignalRProvider } from "./tools/signalRTools/SignalRContext";
 const queryClient = new QueryClient();
 
 function App() {
-  // const handleLoginWithGoogle = () => {
-  //   window.location.href = 'https://localhost:5187/api/account/login/google?returnUrl=http://localhost:5173';
-  // }
-
-  // return (
-  //   <>
-  //     <button onClick={handleLoginWithGoogle}>
-  //       Sign in with Google
-  //     </button>
-  //   </>
-  // )
-
   return (
     <SignalRProvider>
       <QueryClientProvider client={queryClient}>
@@ -26,10 +14,9 @@ function App() {
           <div className="App">
             <header className="App-header">
               <Routes>
-                <Route path="/" element={<Homepage />} />
                 <Route path="/board/:id" element={<Board />} />
+                <Route path="/" element={<Homepage />} />
               </Routes>
-              <Homepage />
             </header>
           </div>
         </Router>
