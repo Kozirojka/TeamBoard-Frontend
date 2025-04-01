@@ -12,7 +12,9 @@ const Homepage = () => {
 
       <CreateOption/>
 
-      <BoardList />
+      {/**<BoardList />**/}
+
+      
     </div>
   );
 };

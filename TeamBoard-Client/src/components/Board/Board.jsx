@@ -1,5 +1,8 @@
-const Board = () => {
+import React from 'react';
 
+// this is the board page, it contains the board and the options to create a new board
+const Board = () => {
+    
 
     return (
         <div className="board">

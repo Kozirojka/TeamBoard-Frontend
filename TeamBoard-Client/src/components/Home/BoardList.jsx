@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 
 
 const fetchBoards = async () => {
-  const response = await fetch(`${BASE_API}/api/books`);
+  const response = await fetch(`${BASE_API}/books`);
   if (!response.ok) {
     throw new Error("Failed to fetch canvas data");
   }
